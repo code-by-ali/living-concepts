@@ -209,7 +209,7 @@ const OurTeamSection = () => {
                   </div>
 
                   {/* Card Content */}
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center">
                     <div>
                       <h3 className="text-xl font-medium text-white mb-1">
                         {member.name}
