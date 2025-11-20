@@ -220,7 +220,7 @@ const OurTeamSection = () => {
                     </div>
 
                     {/* Arrow Icon */}
-                    <div className="w-8 h-8 pr-2 bg-[#2C2C2C] ring-1 ring-white rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 mr-2 bg-[#2C2C2C] ring-1 ring-white rounded-full flex items-center justify-center">
                       <ArrowUpRight className="w-4 h-4 text-white" />
                     </div>
                   </div>
