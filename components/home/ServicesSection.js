@@ -46,8 +46,13 @@ export default function ServicesSection() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
-          variableWidth: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
