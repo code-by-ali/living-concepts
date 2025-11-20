@@ -10,7 +10,7 @@ export default function Header() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About Us", href: "/about" },
+    { name: "About Us", href: "/about-us" },
     { name: "Projects", href: "/projects" },
     { name: "Services", href: "/services" },
     { name: "Blog", href: "/blog" },
@@ -34,7 +34,7 @@ export default function Header() {
       <header className="w-full z-50 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-4 md:py-5 flex items-center justify-between bg-transparent absolute top-0 left-0">
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer">
-          <span className="text-white text-base sm:text-lg md:text-xl font-bebas tracking-wider">
+          <span className="text-white text-base sm:text-2xl md:text-3xl font-bebas tracking-wider">
             LIVING CONCEPT
           </span>
         </div>
