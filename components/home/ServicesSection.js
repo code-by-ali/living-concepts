@@ -233,7 +233,7 @@ export default function ServicesSection() {
                   </div>
 
                   {/* Overlay Content */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end py-6 px-3">
+                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end py-6 px-3">
                     {/* Tags */}
                     <div className="flex mb-3">
                       <span className="text-sm font-medium text-white border border-white/50 px-1 py-1">

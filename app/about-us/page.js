@@ -12,11 +12,11 @@ const page = () => {
     <div>
       <CommonTopSection />
       <AboutHeader />
-      <AboutStorySection />
+      {/* <AboutStorySection />
       <OurTeamSection />
       <OurGoalSection />
       <AboutAwardSection />
-      <ClientsSection />
+      <ClientsSection /> */}
     </div>
   );
 };
