@@ -17,29 +17,37 @@ export default function ServicesSection() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    swipeToSlide: true,
+    touchThreshold: 10,
     responsive: [
       {
         breakpoint: 1280,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2.5,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          variableWidth: false,
         },
       },
     ],
@@ -136,7 +144,7 @@ export default function ServicesSection() {
                   </div>
 
                   {/* Overlay Content */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end py-6 px-3">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end py-6 px-3">
                     {/* Tags */}
                     <div className="flex mb-3">
                       <span className="text-sm font-medium text-white border border-white/50 px-1 py-1">
