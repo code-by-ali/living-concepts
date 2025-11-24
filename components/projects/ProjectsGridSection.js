@@ -1,7 +1,6 @@
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
 
-const ProjectsSection = () => {
+const ProjectsGridSection = () => {
   const projects = [
     {
       id: 1,
@@ -57,44 +56,39 @@ const ProjectsSection = () => {
     <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* Top Row - Logo, Label, and Line */}
-        <div className="flex items-center gap-4 mb-8">
+        <div className="flex items-center gap-4 mb-12">
           {/* Logo/Brand */}
           <div className="shrink-0 inline-flex items-center justify-center w-10 h-10 border border-primary">
-            <span className="text-xl font-medium text-primary">D</span>
+            <span className="text-xl font-medium text-primary">A</span>
           </div>
 
           {/* Label */}
           <p className="shrink-0 text-sm font-normal text-primary uppercase tracking-wider">
-            WORK
+            EXCLUSIVE
           </p>
 
           {/* Horizontal Line */}
           <div className="grow border-t border-[#DCDCDC]"></div>
         </div>
 
-        {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-16">
+        {/* Heading and Description */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-normal text-primary mb-3">
-              Our Projects
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-primary leading-tight">
+              Boldly rooted in Vision
             </h2>
-            <p className="text-[#8F8F8F] font-normal max-w-xl">
-              Discover our portfolio of completed projects, showcasing a variety
-              of styles and functionalities.
+          </div>
+          <div className="flex items-center">
+            <p className="text-[#8F8F8F] text-base font-normal leading-relaxed">
+              We believe that architecture is more than just creating buildings;
+              it's about shaping experiences, fostering connections & enhancing
+              communities.
             </p>
           </div>
-
-          {/* View All Button */}
-          <button className="inline-flex items-center gap-2 pl-1 pr-6 py-1 cursor-pointer rounded-full border border-black text-primary">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <ArrowUpRight className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-sm font-normal">VIEW ALL PROJECTS</span>
-          </button>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -141,4 +135,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default ProjectsGridSection;

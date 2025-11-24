@@ -1,3 +1,4 @@
+import OurTeamSection from "@/components/home/OurTeamSection";
 import AboutSectionHome from "@/components/home/AboutSectionHome";
 import AwardsSection from "@/components/home/AwardsSection";
 import BlogSection from "@/components/home/BlogSection";
@@ -19,9 +20,10 @@ export default function Home() {
       <ServicesSection />
       <ProcessSection />
       <ProjectsSection />
-      <DownloadSection />
+      <OurTeamSection />
       <PartnersSection />
       <BlogSection />
+      <DownloadSection />
     </div>
   );
 }

@@ -34,9 +34,11 @@ export default function Header() {
       <header className="w-full z-50 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-4 md:py-5 flex items-center justify-between bg-transparent absolute top-0 left-0">
         {/* Logo */}
         <div className="flex items-center gap-2 cursor-pointer">
-          <span className="text-white text-base sm:text-2xl md:text-3xl font-bebas tracking-wider">
-            LIVING CONCEPT
-          </span>
+          <a href="/">
+            <span className="text-white text-base sm:text-2xl md:text-3xl font-bebas tracking-wider">
+              LIVING CONCEPT
+            </span>
+          </a>
         </div>
 
         {/* Menu Icon */}
@@ -52,7 +54,9 @@ export default function Header() {
       {/* Full Width Dropdown Menu */}
       <div
         className={`fixed top-0 left-0 w-full h-screen bg-neutral-900/98 backdrop-blur-lg z-40 transition-all duration-500 ease-in-out overflow-y-auto ${
-          isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full pointer-events-none"
+          isMenuOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-full pointer-events-none"
         }`}
       >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 pt-20 pb-8 min-h-screen flex flex-col justify-center">
@@ -81,8 +85,6 @@ export default function Header() {
               </a>
             ))}
           </nav>
-
-          
         </div>
       </div>
 

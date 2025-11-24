@@ -2,7 +2,7 @@ import React from "react";
 import CommongBgCover from "@/public/assets/common-bg-img.svg";
 import CommonImage from "../common/CommonImage";
 
-const AboutHeader = () => {
+const ProjectsHeader = () => {
   return (
     <section className="relative w-full h-[260px] sm:h-80 md:h-[380px] lg:h-[450px] overflow-hidden">
       {/* Background */}
@@ -23,7 +23,7 @@ const AboutHeader = () => {
           
           {/* Title */}
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight">
-            About Us
+            Projects
           </h1>
 
           {/* Description (ALL sizes, but styled per breakpoint) */}
@@ -37,4 +37,4 @@ const AboutHeader = () => {
   );
 };
 
-export default AboutHeader;
+export default ProjectsHeader;
