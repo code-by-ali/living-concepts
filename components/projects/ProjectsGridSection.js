@@ -1,6 +1,10 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const ProjectsGridSection = () => {
+  const router = useRouter();
+
   const projects = [
     {
       id: 1,
@@ -52,6 +56,10 @@ const ProjectsGridSection = () => {
     },
   ];
 
+  const navigateToProjectDetailsPage = () => {
+    router.push("/project-detail");
+  };
+
   return (
     <section className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -93,6 +101,7 @@ const ProjectsGridSection = () => {
             <div
               key={project.id}
               className="group cursor-pointer bg-[#F1F0EE] p-3"
+              onClick={() => navigateToProjectDetailsPage()}
             >
               {/* Image */}
               <div className="relative aspect-4/3 overflow-hidden mb-4">
