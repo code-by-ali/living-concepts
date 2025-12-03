@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import BgImg from "@/public/assets/home-download-section-bg-img.svg";
-import CommonImage from "../common/CommonImage";
+import CommonImage from "./CommonImage";
 
 export default function ContactBanner() {
   return (
@@ -18,7 +18,7 @@ export default function ContactBanner() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-white mb-4">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl leading-relaxed font-normal text-white mb-4">
           We are always open to collaboration and happy to welcome new projects.
         </h2>
 

@@ -9,7 +9,7 @@ export default function Header() {
   const pathname = usePathname();
 
   // Detect project detail route
-  const isProjectDetail = pathname?.startsWith("/project-detail");
+  const isProjectDetail = pathname?.startsWith("/project-detail")||pathname?.startsWith("/blog-detail");
 
   // Colors only for top header
   const headerTextColor = isProjectDetail ? "text-black" : "text-white";
@@ -20,7 +20,7 @@ export default function Header() {
     { name: "About Us", href: "/about-us" },
     { name: "Projects", href: "/projects" },
     { name: "Services", href: "/services" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blogs", href: "/blogs" },
     { name: "Contact Us", href: "/contact" },
   ];
 
