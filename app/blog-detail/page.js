@@ -6,9 +6,9 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      {/* <BlogDetailSection />
+      <BlogDetailSection />
       <AllBlogsDetailSection />
-      <ContactBanner /> */}
+      <ContactBanner />
     </div>
   );
 };
