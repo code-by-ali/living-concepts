@@ -9,7 +9,9 @@ export default function Header() {
   const pathname = usePathname();
 
   // Detect project detail route
-  const isProjectDetail = pathname?.startsWith("/project-detail")||pathname?.startsWith("/blog-detail");
+  const isProjectDetail =
+    pathname?.startsWith("/project-detail") ||
+    pathname?.startsWith("/blog-detail");
 
   // Colors only for top header
   const headerTextColor = isProjectDetail ? "text-black" : "text-white";
@@ -21,7 +23,7 @@ export default function Header() {
     { name: "Projects", href: "/projects" },
     { name: "Services", href: "/services" },
     { name: "Blogs", href: "/blogs" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "Contact Us", href: "/contact-us" },
   ];
 
   useEffect(() => {
@@ -33,7 +35,6 @@ export default function Header() {
     <>
       {/* ONLY THIS PART IS UPDATED */}
       <header className="w-full z-50 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-4 md:py-5 flex items-center justify-between bg-transparent absolute top-0 left-0">
-        
         {/* Logo */}
         <a href="/" className={`cursor-pointer ${headerTextColor}`}>
           <span className="text-base sm:text-2xl md:text-3xl font-bebas tracking-wider">
